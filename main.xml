@@ -1,0 +1,64 @@
+<table name="predator_karambit_reborn">
+	<Localization directory="Localization" default="english.txt">
+	</Localization>
+	<AssetUpdates id="17392" version="1" provider="modworkshop" />
+	<GlobalValue id="predator_karambit_reborn" color="Color(0, 1, 0)" />
+	<!-- Poisoned predator Karambit -->
+	<!-- So, for some weird reason I cant use the dot_data object so, I based it on the kunai and manually changed the anims to make it fit to the x46 -->
+	<Melee id="p_karambit" based_on="cqc" unit="units/mods/weapons/wpn_mel_karambit/wpn_mel_karambit" third_unit="units/mods/weapons/wpn_mel_karambit/wpn_third_mel_karambit" texture_bundle_folder="mods" global_value="p_karambit" anim_global_param="melee_knife">
+		<anim_attack_vars>
+			<value_node value="var1" />
+			<value_node value="var2" />
+			<value_node value="var5" />
+			<!-- var1,var2, var5 are good -->
+			<!-- Do not use var 3/4, it attacks from the wrong side of the blade -->
+		</anim_attack_vars>
+		<align_objects>
+			<value_node value="a_weapon_left" />
+		</align_objects>
+	</Melee>
+	<!-- predator Karambit -->
+	<Melee id="c_karambit" based_on="kampfmesser" unit="units/mods/weapons/wpn_mel_c_karambit/wpn_mel_c_karambit" third_unit="units/mods/weapons/wpn_mel_karambit/wpn_third_mel_karambit" texture_bundle_folder="mods" global_value="c_karambit">
+		<anim_attack_vars>
+			<value_node value="var1" />
+			<value_node value="var2" />
+			<value_node value="var5" />
+			<!-- var1,var2, var5 are good -->
+			<!-- Do not use var 3/4, it attacks from the wrong side of the blade -->
+		</anim_attack_vars>
+	</Melee>
+	<!-- !!!!!!!!!!!!!!!ADD FILES!!!!!!!!!!!!!!!!! -->
+	<AddFiles directory="assets">
+		<!-- !!!!!!!!!!!!!!!ADD FILES!!!!!!!!!!!!!!!!! -->
+		<!-- Poison karambit -->
+		<cooked_physics path="units/mods/weapons/wpn_mel_karambit/wpn_mel_karambit" />
+		<model path="units/mods/weapons/wpn_mel_karambit/wpn_mel_karambit" />
+		<object path="units/mods/weapons/wpn_mel_karambit/wpn_mel_karambit" />
+		<unit path="units/mods/weapons/wpn_mel_karambit/wpn_mel_karambit" />
+		<material_config path="units/mods/weapons/wpn_mel_karambit/wpn_mel_karambit" />
+		<cooked_physics path="units/mods/weapons/wpn_mel_karambit/wpn_third_mel_karambit" />
+		<model path="units/mods/weapons/wpn_mel_karambit/wpn_third_mel_karambit" />
+		<object path="units/mods/weapons/wpn_mel_karambit/wpn_third_mel_karambit" />
+		<unit path="units/mods/weapons/wpn_mel_karambit/wpn_third_mel_karambit" />
+		<material_config path="units/mods/weapons/wpn_mel_karambit/wpn_third_mel_karambit" />
+		<texture path="units/mods/weapons/wpn_mel_karambit/x46_df" />
+		<texture path="units/mods/weapons/wpn_mel_karambit/x46_nm" />
+		<!-- Icon p karambit -->
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/melee_weapons/p_karambit" />
+		<!-- Not poison Predator karambit -->
+		<cooked_physics path="units/mods/weapons/wpn_mel_c_karambit/wpn_mel_c_karambit" />
+		<model path="units/mods/weapons/wpn_mel_c_karambit/wpn_mel_c_karambit" />
+		<object path="units/mods/weapons/wpn_mel_c_karambit/wpn_mel_c_karambit" />
+		<unit path="units/mods/weapons/wpn_mel_c_karambit/wpn_mel_c_karambit" />
+		<material_config path="units/mods/weapons/wpn_mel_c_karambit/wpn_mel_c_karambit" />
+		<cooked_physics path="units/mods/weapons/wpn_mel_c_karambit/wpn_third_mel_karambit" />
+		<model path="units/mods/weapons/wpn_mel_c_karambit/wpn_third_mel_karambit" />
+		<object path="units/mods/weapons/wpn_mel_c_karambit/wpn_third_mel_karambit" />
+		<unit path="units/mods/weapons/wpn_mel_c_karambit/wpn_third_mel_karambit" />
+		<material_config path="units/mods/weapons/wpn_mel_c_karambit/wpn_third_mel_karambit" />
+		<texture path="units/mods/weapons/wpn_mel_c_karambit/x46_df" />
+		<texture path="units/mods/weapons/wpn_mel_c_karambit/x46_nm" />
+		<!-- Icon p karambit -->
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/melee_weapons/c_karambit" />
+	</AddFiles>
+</table>
