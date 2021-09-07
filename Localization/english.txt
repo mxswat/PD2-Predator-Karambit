@@ -3,4 +3,6 @@
     "bm_melee_p_karambit_info" : "This is poisoned like the kunai, also same stats",
     "bm_melee_c_karambit" : "Predator's Karambit",
     "bm_melee_c_karambit_info" : "This is a karambit",
+    "bm_melee_f_karambit" : "Incendiary Karambit",
+    "bm_melee_f_karambit_info" : "This is a karambit",
 }
