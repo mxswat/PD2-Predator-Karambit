@@ -1,10 +1,10 @@
 <table name="predator_karambit_reborn">
 	<Localization directory="Localization" default="english.txt">
 	</Localization>
-	<AssetUpdates id="17392" version="2" provider="modworkshop" />
+	<AssetUpdates id="17392" version="3" provider="modworkshop" />
 	<GlobalValue id="predator_karambit_reborn" color="Color(0, 1, 0)" />
 	<!-- Poisoned predator Karambit -->
-	<Melee id="p_karambit" based_on="x46" unit="units/mods/weapons/wpn_mel_karambit/wpn_mel_karambit" third_unit="units/mods/weapons/wpn_mel_karambit/wpn_third_mel_karambit" texture_bundle_folder="mods" global_value="p_karambit" anim_global_param="melee_knife" info_id="bm_melee_cqc_info" repeat_expire_t="0.3">
+	<Melee id="p_karambit" based_on="x46" unit="units/mods/weapons/wpn_mel_karambit/wpn_mel_karambit" third_unit="units/mods/weapons/wpn_mel_karambit/wpn_third_mel_karambit" texture_bundle_folder="mods" global_value="p_karambit" repeat_expire_t="0.3" info_id="bm_melee_p_karambit_info">
 		<dot_data type="poison">
 			<custom_data dot_length="1" hurt_animation_chance="0.7"></custom_data>
 		</dot_data>
@@ -20,7 +20,7 @@
 		</align_objects>
 	</Melee>
 	<!-- predator Karambit -->
-	<Melee id="c_karambit" based_on="x46" unit="units/mods/weapons/wpn_mel_c_karambit/wpn_mel_c_karambit" third_unit="units/mods/weapons/wpn_mel_karambit/wpn_third_mel_karambit" texture_bundle_folder="mods" global_value="c_karambit" repeat_expire_t="0.3">
+	<Melee id="c_karambit" based_on="x46" unit="units/mods/weapons/wpn_mel_c_karambit/wpn_mel_c_karambit" third_unit="units/mods/weapons/wpn_mel_karambit/wpn_third_mel_karambit" texture_bundle_folder="mods" global_value="c_karambit" repeat_expire_t="0.3" info_id="bm_melee_c_karambit_info">
 		<anim_attack_vars>
 			<value_node value="var1" />
 			<value_node value="var2" />
@@ -31,8 +31,20 @@
 	</Melee>
 	
 	<!-- predator fire Karambit -->
-	<Melee id="f_karambit" based_on="x46" unit="units/mods/weapons/wpn_mel_f_karambit/wpn_mel_f_karambit" third_unit="units/mods/weapons/wpn_mel_karambit/wpn_third_mel_karambit" texture_bundle_folder="mods" global_value="f_karambit" repeat_expire_t="0.3">
+	<Melee id="f_karambit" based_on="x46" unit="units/mods/weapons/wpn_mel_f_karambit/wpn_mel_f_karambit" third_unit="units/mods/weapons/wpn_mel_karambit/wpn_third_mel_karambit" texture_bundle_folder="mods" global_value="f_karambit" repeat_expire_t="0.3" info_id="bm_melee_f_karambit_info">
 		<fire_dot_data dot_trigger_chance="70" dot_damage="1" dot_length="3.1" dot_trigger_max_distance="3000" dot_tick_period="0.5"/>
+		<anim_attack_vars>
+			<value_node value="var1" />
+			<value_node value="var2" />
+			<value_node value="var5" />
+			<!-- var1,var2, var5 are good -->
+			<!-- Do not use var 3/4, it attacks from the wrong side of the blade -->
+		</anim_attack_vars>
+	</Melee>
+
+	<!-- predator Electric Karambit -->
+	<Melee id="e_karambit" based_on="x46" unit="units/mods/weapons/wpn_mel_e_karambit/wpn_mel_e_karambit" third_unit="units/mods/weapons/wpn_mel_karambit/wpn_third_mel_karambit" texture_bundle_folder="mods" global_value="e_karambit" repeat_expire_t="0.3" info_id="bm_melee_e_karambit_info">
+		<tase_data tase_strength="heavy"/> 
 		<anim_attack_vars>
 			<value_node value="var1" />
 			<value_node value="var2" />
@@ -89,5 +101,20 @@
 		<texture path="units/mods/weapons/wpn_mel_f_karambit/x46_nm" />
 		<!-- Icon f karambit -->
 		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/melee_weapons/f_karambit" />
+		<!-- Predator electric karambit -->
+		<cooked_physics path="units/mods/weapons/wpn_mel_e_karambit/wpn_mel_e_karambit" />
+		<model path="units/mods/weapons/wpn_mel_e_karambit/wpn_mel_e_karambit" />
+		<object path="units/mods/weapons/wpn_mel_e_karambit/wpn_mel_e_karambit" />
+		<unit path="units/mods/weapons/wpn_mel_e_karambit/wpn_mel_e_karambit" />
+		<material_config path="units/mods/weapons/wpn_mel_e_karambit/wpn_mel_e_karambit" />
+		<cooked_physics path="units/mods/weapons/wpn_mel_e_karambit/wpn_third_mel_karambit" />
+		<model path="units/mods/weapons/wpn_mel_e_karambit/wpn_third_mel_karambit" />
+		<object path="units/mods/weapons/wpn_mel_e_karambit/wpn_third_mel_karambit" />
+		<unit path="units/mods/weapons/wpn_mel_e_karambit/wpn_third_mel_karambit" />
+		<material_config path="units/mods/weapons/wpn_mel_e_karambit/wpn_third_mel_karambit" />
+		<texture path="units/mods/weapons/wpn_mel_e_karambit/x46_df" />
+		<texture path="units/mods/weapons/wpn_mel_e_karambit/x46_nm" />
+		<!-- Icon f karambit -->
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/melee_weapons/e_karambit" />
 	</AddFiles>
 </table>

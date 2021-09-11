@@ -1,8 +1,10 @@
 {
-    "bm_melee_p_karambit" : "Poisoned Karambit",
-    "bm_melee_p_karambit_info" : "This is poisoned like the kunai, also same stats",
+    "bm_melee_p_karambit" : "Predator's Poisoned Karambit",
+    "bm_melee_p_karambit_info" : "This rather unique Karambit was planned to remain in-house at one of Predator's R&D labs it's purpose was to be a non-lethal alternative to the Predator's standard issue Karambit until an intern got a hold of it",
     "bm_melee_c_karambit" : "Predator's Karambit",
-    "bm_melee_c_karambit_info" : "This is a karambit",
-    "bm_melee_f_karambit" : "Incendiary Karambit",
-    "bm_melee_f_karambit_info" : "This is a karambit",
+    "bm_melee_c_karambit_info" : "Predator's standard issue Karambit, Used by Gamers and 12 year olds world-wide",
+    "bm_melee_f_karambit" : "Predator's Incendiary Karambit",
+    "bm_melee_f_karambit_info" : "Not just your average Predator standard issue Karambit. This particular variant is designed to not only burn your adversaries but make a killer flame-grilled steak",
+    "bm_melee_e_karambit" : "Predator's Battery-powered Karambit",
+    "bm_melee_e_karambit_info" : "Due to some ecoterrorists getting their way because of a democratic majority, Predator were force to make a battery-powered karambit for those beautiful socialist tax rebates"
 }

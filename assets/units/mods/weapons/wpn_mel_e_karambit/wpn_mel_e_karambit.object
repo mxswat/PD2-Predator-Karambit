@@ -1,0 +1,6 @@
+<dynamic_object>
+    <diesel orientation_object="rp_wpn_fps_mel_x46" materials="units/mods/weapons/wpn_mel_e_karambit/wpn_mel_e_karambit" />
+    <graphics>
+        <object enabled="true" name="g_g" />
+    </graphics>
+</dynamic_object>
